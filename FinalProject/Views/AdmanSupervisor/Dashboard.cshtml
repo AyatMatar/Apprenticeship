@@ -1,0 +1,58 @@
+﻿@using FinalProject.DTO
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    var dashboard = (DashboardDto)ViewBag.dashboard;
+}
+
+
+<div class="row m-5 add-div">
+	<div class="col-12 m-5">
+		<div class="shadow-box m-5">
+			<div class="row">
+				<div class="col-12">
+					<h5 class="sub-head">Training Details</h5>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row my-3">
+					<div class="col-12">
+						<div class="credentials-sec">
+							<div class="credential-info">
+								<img src="~/images/cred-info-1.svg">
+								<div class="credential-details">
+									<h6><b>@dashboard.NumApprenticeships</b></h6>
+									<p><b>Total Number of</b> <span><b>Traning</b></span></p>
+								</div>
+							</div>
+							<div class="credential-info">
+								<img src="~/images/cred-info-2.svg">
+								<div class="credential-details">
+									<h6><b>@dashboard.NumAssiments</b></h6>
+									<p><b>Total Number of</b> <span><b>Assiments</b></span></p>
+								</div>
+							</div>
+							<div class="credential-info">
+								<img src="~/images/cred-info-3.svg">
+								<div class="credential-details">
+									<h6><b>@dashboard.NumStudentes</b></h6>
+									<p><b>Total Number of</b> <span><b>Studentes</b></span></p>
+								</div>
+							</div>
+							<div class="credential-info">
+								<img src="~/images/cred-info-4.svg">
+								<div class="credential-details">
+									<h6><b>@dashboard.NumObjectives</b></h6>
+									<p><b>Total Number of</b> <span><b>Objectives</b></span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+               
+			</div>
+          
+		</div>
+	</div>
+</div>
+
+
